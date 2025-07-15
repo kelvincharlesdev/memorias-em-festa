@@ -1,21 +1,38 @@
-import type { Metadata } from 'next';
+import { Great_Vibes, Inter, Poppins } from 'next/font/google';
 
 import './globals.css';
 
-export const metadata: Metadata = {
-  title: 'Memória em Festa',
-  description:
-    'Memória em Festa é projeto pra vc viver seus momentos inesqueciveis na perspectiva de seus amigos e convidados.',
-};
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['500', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+const greatVibes = Great_Vibes({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-great-vibes',
+  display: 'swap',
+});
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body className={' antialiased'}>{children}</body>
+    <html
+      className={`${poppins.variable} ${inter.variable} ${greatVibes.variable}`}
+      lang="pt-BR"
+    >
+      <body className="bg-gradient-official antialiased">{children}</body>
     </html>
   );
 }

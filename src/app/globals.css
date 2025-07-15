@@ -1,22 +1,93 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* 🎨 Paleta de Cores */
+
+  --color-primary: #7f3fbf; /* Botões, destaques, gradiente */
+  --color-secondary: #ff5ec4; /* Gradiente, detalhes, hover */
+  --color-dark-bg: #1c1b23; /* Background principal em dark mode */
+  --color-accent: #7ca9f3;
+  --gradient-official: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
+
+  --font-title--main: var(--font-great-vibes, "Great Vibes", sans-serif);
+  --font-titles: var(--font-poppins, "Poppins", sans-serif);
+  --font-texts: var(--font-inter, "Inter", sans-serif);
+
+  /* ✨ Sombras (boxShadow) */
+  /* Tailwind: shadow-sm */
+  /* Tailwind: shadow-md */
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15); /* Personalizada */
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2); /* Personalizada */
+  --shadow-glow: 0 0 8px rgba(54, 98, 227, 0.5); /* Glow personalizado */
+
+  /* Fundo Claro */
+  /*  Tailwind: gray-50 */
+
+  /* Texto Claro */
+  /*  Tailwind: zinc-200 */
+
+  /* Texto Escuro */
+  /*  Tailwind: gray-800 */
+
+  /*Variações para cor Primária */
+  /*  #e8dbf8; Roxo Muito Claro — Tailwind: purple-100 */
+  /*  #b594e8; Roxo Claro — Tailwind: purple-300 */
+  /*  #5a2e8a; Roxo Escuro Médio — Tailwind: purple-700 */
+  /*  #3b1f58; Roxo Profundo — Tailwind: purple-900 */
+
+  /* Variações para cor secundária */
+  /*  #ff85d0; Rosa Claro — Tailwind: pink-300 */
+  /*  #ff2fb0; Rosa Escuro — (sem equivalente direto no Tailwind) */
+
+  /* Variação para accent Links e ícones */
+  /*  #93b7f6 — Tailwind: blue-300 */
+  /*  #4f8df1 — Tailwind: blue-500 */
+
+  /* Fonts-Size */
+  /* Titulos */
+  /* H1 =>  text-4xl md:text-6xl   36px/ 60px */
+  /* H2 =>  text-3xl md:text-5xl   30px/ 48px */
+  /* H3 =>  text-2xl md:text-4xl   24px/ 36px*/
+  /* H4 =>  text-xl md:text-2xl    20px/ 24px */
+
+  /* Textos, Botões etc*/
+  /* text-xs 12px */
+  /* text-sm 14px */
+  /* text-base 16px */
+  /* text-lg 18px */
+  /* text-xl 20px */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html,
+  body {
+    font-family: var(--font-texts);
+    font-weight: 400;
+    min-height: 100vh;
+  }
 
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+  h1 {
+    font-family: var(--font-title--main);
+    font-weight: 400;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-titles);
+    font-weight: 700;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .bg-gradient-official {
+    background-image: var(--gradient-official);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
