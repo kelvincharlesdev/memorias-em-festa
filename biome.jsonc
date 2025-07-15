@@ -10,5 +10,13 @@
         "useFilenamingConvention": "off"
       }
     }
+  },
+  "formatter": {
+    "enabled": true
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true
+    }
   }
 }
