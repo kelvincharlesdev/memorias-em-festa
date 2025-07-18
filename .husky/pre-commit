@@ -1,3 +1,2 @@
 #!/bin/sh
 npx ultracite format
-npx biome format --write
