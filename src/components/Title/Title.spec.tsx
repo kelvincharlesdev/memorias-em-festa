@@ -14,7 +14,7 @@ describe('Component Title', () => {
     render(
       <Title as="h2" size="lg" weight="semibold">
         Exemplo de Título H2
-      </Title>,
+      </Title>
     );
 
     const titleH2 = document.querySelector('h2');
@@ -25,7 +25,7 @@ describe('Component Title', () => {
     render(
       <Title as="h3" size="md" weight="normal">
         Exemplo de Título H3
-      </Title>,
+      </Title>
     );
 
     const titleH3 = document.querySelector('h3');
