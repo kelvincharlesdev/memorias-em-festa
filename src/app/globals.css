@@ -4,7 +4,7 @@
   /* 🎨 Paleta de Cores */
 
   --color-primary: #7f3fbf; /* Botões, destaques, gradiente */
-  --color-secondary: #ff5ec4; /* Gradiente, detalhes, hover */
+  --color-secondary: #cf2190; /* Gradiente, detalhes, hover */
   --color-dark-bg: #1c1b23; /* Background principal em dark mode */
   --color-accent: #7ca9f3;
   --gradient-official: linear-gradient(
@@ -54,12 +54,12 @@
   /* H3 =>  text-2xl md:text-4xl   24px/ 36px*/
   /* H4 =>  text-xl md:text-2xl    20px/ 24px */
 
-  /* Textos, Botões etc*/
-  /* text-xs 12px */
-  /* text-sm 14px */
-  /* text-base 16px */
-  /* text-lg 18px */
-  /* text-xl 20px */
+  /* Textos, Botões etc */
+  /* text-xs 12px
+  text-sm 14px
+  text-base 16px
+  text-lg 18px
+  text-xl 20px */
 }
 
 @layer base {
