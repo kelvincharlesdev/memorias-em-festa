@@ -1,5 +1,5 @@
-import { Button } from "@/components/Button";
-import { Title } from "@/components/Title";
+import { Button } from '@/components/Button';
+import { Title } from '@/components/Title';
 
 export default function Home() {
   return (

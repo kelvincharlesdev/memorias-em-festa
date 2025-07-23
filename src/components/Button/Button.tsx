@@ -1,6 +1,6 @@
-import { cn } from "@/lib/utils";
-import type * as I from "./Button.interface";
-import { buttonVariants } from "./ButtonVariants";
+import { cn } from '@/lib/utils';
+import type * as I from './Button.interface';
+import { buttonVariants } from './ButtonVariants';
 
 export const Button = ({
   children,
