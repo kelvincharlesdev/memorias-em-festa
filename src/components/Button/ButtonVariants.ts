@@ -1,22 +1,31 @@
 import { tv } from 'tailwind-variants';
 
 export const buttonVariants = tv({
-    base: 'flex items-center justify-center rounded-[8px] text-purple-100 cursor-pointer p-2 shadow-lg  transition-opacity duration-400 hover:opacity-80 font-texts',
+  base: 'flex cursor-pointer items-center justify-center rounded-lg py-2 text-purple-100 shadow-lg transition-all duration-400',
   variants: {
     size: {
-      sm: 'text-xl ',
-      md: 'text-sm ',
-      lg: 'text-base ',
-      xl: 'text-xl',
+      sm: 'h-8 w-24',
+      md: 'h-10 w-28',
+      lg: 'h-10 w-60',
+      'w-full': 'w-full',
+    },
+    fontSize: {
+      'text-sm': 'text-sm md:text-xs',
+      'text-base': 'text-base md:text-sm',
+      'text-lg': 'text-lg md:text-base',
+      'text-xl': 'text-xl md:text-lg',
     },
     color: {
-      primary: 'bg-dark-bg  border-2 border-secondary ',
-      secondary: 'bg-secondary',
-      gost: 'bg-transparent  ',
+      primary:
+        'bg-gradient-to-r from-purple-700 to-purple-950 hover:bg-gradient-to-l hover:from-purple-700 hover:to-purple-950',
+
+      secondary: 'w-36 bg-secondary hover:shadow-pink-800',
+      gost: 'border-1 border-purple-300 bg-transparent hover:border-purple-500',
     },
   },
   defaultVariants: {
-    size: 'xl',
+    size: 'md',
+    fontSize: 'text-base',
     color: 'primary',
   },
 });
