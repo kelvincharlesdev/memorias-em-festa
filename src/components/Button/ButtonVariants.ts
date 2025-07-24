@@ -1,12 +1,12 @@
 import { tv } from 'tailwind-variants';
 
 export const buttonVariants = tv({
-  base: 'flex cursor-pointer items-center justify-center rounded-lg py-2 text-purple-100 shadow-lg transition-all duration-400',
+  base: 'flex cursor-pointer items-center justify-center rounded-lg py-2 text-purple-100 shadow-lg transition-all duration-400 h-10',
   variants: {
     size: {
-      sm: 'h-8 w-24',
-      md: 'h-10 w-28',
-      lg: 'h-10 w-60',
+      sm: 'w-24',
+      md: ' w-28',
+      lg: 'w-60',
       'w-full': 'w-full',
     },
     fontSize: {
@@ -19,7 +19,7 @@ export const buttonVariants = tv({
       primary:
         'bg-gradient-to-r from-purple-700 to-purple-950 hover:bg-gradient-to-l hover:from-purple-700 hover:to-purple-950',
 
-      secondary: 'w-36 bg-secondary hover:shadow-pink-800',
+      secondary: ' bg-secondary hover:shadow-pink-800',
       gost: 'border-1 border-purple-300 bg-transparent hover:border-purple-500',
     },
   },
