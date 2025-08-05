@@ -4,5 +4,5 @@ export interface PriceProps {
   value: number;
   locale?: string;
   currency?: string;
-  fontSize?: PriceSize;
+  fontSize: PriceSize;
 }

@@ -1,6 +1,6 @@
-import { Button } from "@/components/Button";
-import { Price } from "@/components/Price";
-import { Title } from "@/components/Title";
+import { Button } from '@/components/Button';
+import { Price } from '@/components/Price';
+import { Title } from '@/components/Title';
 
 export default function Home() {
   return (
@@ -28,11 +28,11 @@ export default function Home() {
         Gost
       </Button>
       <div className="flex flex-col items-center justify-center gap-3 bg-purple-950 p-4">
-        <Price value={99.9} />
+        <Price fontSize="lg" value={99.9} />
 
         <Price fontSize="sm" value={49.5} />
 
-        <Price currency="USD" locale="en-US" value={0.0} />
+        <Price currency="USD" fontSize="lg" locale="en-US" value={29.9} />
       </div>
     </div>
   );
