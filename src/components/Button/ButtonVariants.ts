@@ -1,7 +1,7 @@
 import { tv } from 'tailwind-variants';
 
 export const buttonVariants = tv({
-  base: 'flex cursor-pointer items-center justify-center rounded-lg py-2 text-purple-100 shadow-lg transition-all duration-400 h-10',
+  base: 'flex h-10 cursor-pointer items-center justify-center rounded-lg py-2 text-purple-100 shadow-lg transition-all duration-400',
   variants: {
     size: {
       sm: 'w-24',
