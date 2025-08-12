@@ -1,11 +1,11 @@
-import { CiCalendarDate } from "react-icons/ci";
-import { LiaBirthdayCakeSolid } from "react-icons/lia";
-import { SlLocationPin } from "react-icons/sl";
-import { TbClockHour7 } from "react-icons/tb";
-import { Button } from "@/components/Button";
-import Input from "@/components/Input";
-import { Price } from "@/components/Price";
-import { Title } from "@/components/Title";
+import { CiCalendarDate } from 'react-icons/ci';
+import { LiaBirthdayCakeSolid } from 'react-icons/lia';
+import { SlLocationPin } from 'react-icons/sl';
+import { TbClockHour7 } from 'react-icons/tb';
+import { Button } from '@/components/Button';
+import Input from '@/components/Input';
+import { Price } from '@/components/Price';
+import { Title } from '@/components/Title';
 
 export default function Home() {
   return (

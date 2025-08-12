@@ -1,4 +1,4 @@
-import type { FieldProps } from "./field.interface";
+import type { FieldProps } from './field.interface';
 
 export const Field = ({ type, placeholder }: FieldProps) => {
   return (
