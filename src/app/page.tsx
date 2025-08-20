@@ -1,3 +1,5 @@
+
+import { Accordion } from '@/components/Accordion';
 import { Button } from '@/components/Button';
 import { Price } from '@/components/Price';
 import { Title } from '@/components/Title';
@@ -34,6 +36,10 @@ export default function Home() {
 
         <Price currency="USD" fontSize="lg" locale="en-US" value={29.9} />
       </div>
+      <div className='w-full flex items-center justify-center bg-fuchsia-900'>
+        <Accordion />
+      </div>
+       
     </div>
   );
 }
