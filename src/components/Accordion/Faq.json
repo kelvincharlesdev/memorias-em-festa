@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "question": "Como funciona o Memórias em Festa?",
+    "answer": "Após criar um evento, você recebe um QR Code exclusivo. Tudo acontece direto do navegador, pelo QR Code da festa."
+  },
+  {
+    "id": 2,
+    "question": "Preciso instalar algum app?",
+    "answer": "Não é necessário instalar nada, tudo funciona direto no navegador."
+  },
+  {
+    "id": 3,
+    "question": "As fotos são privadas?",
+    "answer": "Sim, as fotos ficam disponíveis apenas para o contratante e convidados autorizados."
+  },
+  {
+    "id": 4,
+    "question": "Qual plano dá direito a mais fotos?",
+    "answer": "Temos planos que variam conforme a quantidade de fotos. Consulte nossos pacotes para escolher o ideal."
+  },
+  {
+    "id": 5,
+    "question": "Posso testar de graça?",
+    "answer": "Sim, você pode testar gratuitamente antes de contratar."
+  }
+]

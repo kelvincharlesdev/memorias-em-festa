@@ -1,3 +1,4 @@
+import { Accordion } from '@/components/Accordion';
 import { Button } from '@/components/Button';
 import { Price } from '@/components/Price';
 import { Title } from '@/components/Title';
@@ -33,6 +34,9 @@ export default function Home() {
         <Price fontSize="sm" value={49.5} />
 
         <Price currency="USD" fontSize="lg" locale="en-US" value={29.9} />
+      </div>
+      <div className="flex w-full items-center justify-center bg-fuchsia-900">
+        <Accordion />
       </div>
     </div>
   );
