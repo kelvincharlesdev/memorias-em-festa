@@ -81,6 +81,35 @@
     font-family: var(--font-titles);
     font-weight: 700;
   }
+
+  input {
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  input[type="date"]::-moz-calendar-picker-indicator {
+    display: none;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  input[type="time"]::-webkit-inner-spin-button,
+  input[type="time"]::-webkit-clear-button {
+    display: none;
+  }
+
+  input[type="time"]::-moz-focus-inner {
+    border: 0;
+  }
 }
 
 @layer utilities {

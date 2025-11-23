@@ -1,4 +1,9 @@
+import { CiCalendarDate } from 'react-icons/ci';
+import { LiaBirthdayCakeSolid } from 'react-icons/lia';
+import { SlLocationPin } from 'react-icons/sl';
+import { TbClockHour7 } from 'react-icons/tb';
 import { Button } from '@/components/Button';
+import Input from '@/components/Input';
 import { Price } from '@/components/Price';
 import { Title } from '@/components/Title';
 
@@ -33,6 +38,31 @@ export default function Home() {
         <Price fontSize="sm" value={49.5} />
 
         <Price currency="USD" fontSize="lg" locale="en-US" value={29.9} />
+      </div>
+      <div className="flex w-full max-w-md flex-col gap-3 bg-gradient-to-b from-[#170322] via-[#2B083C] to-[#430A57] p-4">
+        <Input.Wrapper>
+          <Input.Icon Icon={LiaBirthdayCakeSolid} />
+          <Input.Field placeholder="Nome do Evento" type="text" />
+        </Input.Wrapper>
+        <Input.Wrapper>
+          <Input.Field placeholder="Nome do Evento" type="text" />
+          <Input.Icon Icon={LiaBirthdayCakeSolid} />
+        </Input.Wrapper>
+        <Input.Wrapper>
+          <Input.Icon Icon={CiCalendarDate} />
+          <Input.Field type="date" />
+        </Input.Wrapper>
+        <Input.Wrapper>
+          <Input.Icon Icon={TbClockHour7} />
+          <Input.Field type="time" />
+        </Input.Wrapper>
+        <Input.Wrapper>
+          <Input.Icon Icon={SlLocationPin} />
+          <Input.Field
+            placeholder="Endereço do Evento (opcional)"
+            type="text"
+          />
+        </Input.Wrapper>
       </div>
     </div>
   );
